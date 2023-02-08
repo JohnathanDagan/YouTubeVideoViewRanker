@@ -5,7 +5,7 @@ from tabulate import tabulate
 import requests
 query_count = 0
 url_base = "https://www.googleapis.com/youtube/v3"
-API_KEY = 'AIzaSyCaFODfXN5L3kw8uQhWObyAExLlwS8HqjE'
+API_KEY = 'API_KEY'
 #youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 def id_to_rank(channel_id, max_age): #used
