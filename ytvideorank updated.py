@@ -62,8 +62,9 @@ def get_vid_info_list(vid_id_list, max_age): #ACTIVE (2) used 2
         converted_date = date(int(i_date[0:4]), int(i_date[5:7]), int(i_date[8:10]))
         age_in_days = (date.today() - converted_date).days
 
-        if age_in_days > max_age:
-            break
+        if max_age != 'all':
+            if age_in_days > max_age:
+                break
 
         vid_info_list.append([index_title, index_view_count, elem, age_in_days, converted_date])
 
@@ -151,5 +152,5 @@ def main():
 main()
 
 '''
-fklHBWow8vE
+Test link: fklHBWow8vE
 '''
