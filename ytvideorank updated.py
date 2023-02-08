@@ -25,7 +25,7 @@ def rank_video_views(vid_info_list, max_age): #used 3
         
         
     end_time = datetime.now()
-    print('Ranked: {} \n'.format(end_time - start_time))
+    print('Ranking complete: {} \n'.format(end_time - start_time))
     if max_age == 'all':
         print("Top videos:")
     else:
@@ -69,7 +69,7 @@ def get_vid_info_list(vid_id_list, max_age): #ACTIVE (2) used 2
         vid_info_list.append([index_title, index_view_count, elem, age_in_days, converted_date])
 
     end_time = datetime.now()
-    print('All video data stuff: {}'.format(end_time - start_time))
+    print('All video data: {}'.format(end_time - start_time))
     
     return vid_info_list
 
@@ -105,7 +105,7 @@ def get_playlist_vid_id_list(playlistId): #ACTIVE (1) also used 2
             break
                    
     end_time = datetime.now()
-    print('Just the links: {}'.format(end_time - start_time))
+    print('All video links: {}'.format(end_time - start_time))
     return vid_id_list
 
 '''
